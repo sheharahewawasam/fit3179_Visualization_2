@@ -78,7 +78,7 @@ var map1Spec = {
     }
   ]
 };
-var countries = ["ASEAN", "Afghanistan", "Africa", "Albania", "Algeria", "Americas", "Argentina", "Armenia", "Australia", "Austria", "Azerbaijan", "Bahamas", "Bahrain", "Bangladesh", "Barbados", "Belarus", "Belgium", "Belize", "Benin", "Bhutan", "Bolivia", "Bosnia and Herzegovina", "Botswana", "Brazil", "Brunei", "Bulgaria", "Burkina Faso", "Burundi", "Cambodia", "Cameroon", "Canada", "Cape Verde", "Central Africa", "Central African Republic", "Central America", "Central Asia", "Chad", "Chile", "China", "Colombia", "Comoros", "Congo", "Costa Rica", "Croatia", "Cuba", "Cyprus", "Czechia", "Democratic Republic of Congo", "Denmark", "Djibouti", "Dominican Republic", "East Timor", "Eastern Africa", "Ecuador", "Egypt", "El Salvador", "Equatorial Guinea", "Eritrea", "Estonia", "Eswatini", "Ethiopia", "Fiji", "Finland", "France", "Gabon", "Gambia", "Georgia", "Germany", "Ghana", "Greece", "Guatemala", "Guinea", "GuineaBissau", "Guyana", "Haiti", "Honduras", "Hungary", "Iceland", "India", "Indonesia", "Iran", "Iraq", "Ireland", "Israel", "Italy", "Jamaica", "Japan", "Jordan", "Kazakhstan", "Kenya", "Kiribati", "Kosovo", "Kuwait", "Kyrgyzstan", "Laos", "Latvia", "Lebanon", "Lesotho", "Liberia", "Libya", "Lithuania", "Luxembourg", "Madagascar", "Malawi", "Malaysia", "Maldives", "Mali", "Malta", "Marshall Islands", "Mauritania", "Mauritius", "Mexico", "Micronesia", "Moldova", "Mongolia", "Montenegro", "Morocco", "Mozambique", "Myanmar", "Namibia", "Nauru", "Nepal", "Netherlands", "New Zealand", "Nicaragua", "Niger", "Nigeria", "North Korea", "North Macedonia", "Northern Europe", "Norway", "Oman", "Pakistan", "Palau", "Palestine", "Panama", "Papua New Guinea", "Paraguay", "Peru", "Philippines", "Poland", "Portugal", "Puerto Rico", "Qatar", "Romania", "Russia", "Rwanda", "Samoa", "Saudi Arabia", "Senegal", "Serbia", "Seychelles", "Sierra Leone", "Singapore", "Slovakia", "Slovenia", "Solomon Islands", "Somalia", "South Africa", "South America", "South Korea", "SouthEastern Asia", "Southern Africa", "Southern Asia", "Southern Europe", "Spain", "Sri Lanka", "Sudan", "Suriname", "Sweden", "Switzerland", "Syria", "Taiwan", "Tajikistan", "Tanzania", "Thailand", "Togo", "Tonga", "Trinidad and Tobago", "Tunisia", "Turkey", "Turkmenistan", "Uganda", "Ukraine", "United Arab Emirates", "United Kingdom", "United States", "Uruguay", "Uzbekistan", "Vanuatu", "Venezuela", "Vietnam", "Western Africa", "Western Asia", "Western Europe", "Yemen", "Zambia", "Zimbabwe", "World", "Various regional and incomebased groupings"]
+var countries = ["Afghanistan", "Albania", "Algeria", "Argentina", "Armenia", "Australia", "Austria", "Azerbaijan", "Bahamas", "Bahrain", "Bangladesh", "Barbados", "Belarus", "Belgium", "Belize", "Benin", "Bhutan", "Bolivia", "Bosnia and Herzegovina", "Botswana", "Brazil", "Brunei", "Bulgaria", "Burkina Faso", "Burundi", "Cambodia", "Cameroon", "Canada", "Cape Verde", "Central African Republic", "Chad", "Chile", "China", "Colombia", "Comoros", "Congo", "Costa Rica", "Croatia", "Cuba", "Cyprus", "Czechia", "Democratic Republic of Congo", "Denmark", "Djibouti", "Dominican Republic", "East Timor", "Ecuador", "Egypt", "El Salvador", "Equatorial Guinea", "Eritrea", "Estonia", "Eswatini", "Ethiopia", "Fiji", "Finland", "France", "Gabon", "Gambia", "Georgia", "Germany", "Ghana", "Greece", "Guatemala", "Guinea", "Guinea-Bissau", "Guyana", "Haiti", "Honduras", "Hungary", "Iceland", "India", "Indonesia", "Iran", "Iraq", "Ireland", "Israel", "Italy", "Jamaica", "Japan", "Jordan", "Kazakhstan", "Kenya", "Kiribati", "Kosovo", "Kuwait", "Kyrgyzstan", "Laos", "Latvia", "Lebanon", "Lesotho", "Liberia", "Libya", "Lithuania", "Luxembourg", "Madagascar", "Malawi", "Malaysia", "Maldives", "Mali", "Malta", "Marshall Islands", "Mauritania", "Mauritius", "Mexico", "Micronesia", "Moldova", "Mongolia", "Montenegro", "Morocco", "Mozambique", "Myanmar", "Namibia", "Nauru", "Nepal", "Netherlands", "New Zealand", "Nicaragua", "Niger", "Nigeria", "North Korea", "North Macedonia", "Norway", "Oman", "Pakistan", "Palau", "Palestine", "Panama", "Papua New Guinea", "Paraguay", "Peru", "Philippines", "Poland", "Portugal", "Puerto Rico", "Qatar", "Romania", "Russia", "Rwanda", "Samoa", "Saudi Arabia", "Senegal", "Serbia", "Seychelles", "Sierra Leone", "Singapore", "Slovakia", "Slovenia", "Solomon Islands", "Somalia", "South Africa", "South Korea", "Spain", "Sri Lanka", "Sudan", "Suriname", "Sweden", "Switzerland", "Syria", "Taiwan", "Tajikistan", "Tanzania", "Thailand", "Togo", "Tonga", "Trinidad and Tobago", "Tunisia", "Turkey", "Turkmenistan", "Uganda", "Ukraine", "United Arab Emirates", "United Kingdom", "United States", "Uruguay", "Uzbekistan", "Vanuatu", "Venezuela", "Vietnam", "Yemen", "Zambia", "Zimbabwe"];
 let index = 0;
 let field = "Labour force by sex and age -- ILO modelled estimates, July 2017 (thousands) - 10-year age bands: 15-24 - Sex: Female";
 let list = [
@@ -127,7 +127,7 @@ function updateMap2Spec() {
           "bind": {
             "input": "select",
             "options": countries,
-            "name": "Select Entity: "
+            "name": "Select Country: "
           }
         },
         {
@@ -136,7 +136,7 @@ function updateMap2Spec() {
           "bind": {
             "input": "select",
             "options": countries,
-            "name": "Select Entity: "
+            "name": "Select Country: "
           }
         },
         {
@@ -145,7 +145,7 @@ function updateMap2Spec() {
           "bind": {
             "input": "select",
             "options": countries,
-            "name": "Select Entity: "
+            "name": "Select Country: "
           }
         },
         {
@@ -154,7 +154,7 @@ function updateMap2Spec() {
           "bind": {
             "input": "select",
             "options": countries,
-            "name": "Select Entity: "
+            "name": "Select Country: "
           }
         },
         {
@@ -163,7 +163,7 @@ function updateMap2Spec() {
           "bind": {
             "input": "select",
             "options": countries,
-            "name": "Select Entity: "
+            "name": "Select Country: "
           }
         },
         {
@@ -201,7 +201,7 @@ function updateMap2Spec() {
               "field": "Entity",
               "type": "ordinal",
               "axis": {
-                  "title": "Entity"
+                  "title": "Country"
               }
           },
           "tooltip": [
@@ -233,7 +233,7 @@ function updateMap2Spec() {
       console.log("Map 2 updated successfully!");
   }).catch(console.error);
 };
-var countries2 = ["Afghanistan","Afghanistan","Albania","Algeria","Angola","Argentina","Armenia","Australia","Austria","Azerbaijan","Bahamas","Bahrain","Bangladesh","Barbados","Belarus","Belgium","Belize","Benin","Bhutan","Bolivia","Bosnia and Herzegovina","Botswana","Brazil","Brunei","Bulgaria","Burkina Faso","Burundi","Cambodia","Cameroon","Canada","Cape Verde","Central African Republic","Chad","Channel Islands","Chile","China","Colombia","Comoros","Congo","Costa Rica","Cote d'Ivoire","Croatia","Cuba","Cyprus","Czechia","Democratic Republic of Congo","Denmark","Djibouti","Dominican Republic","East Asia and Pacific (WB)","East Timor","Ecuador","Egypt","El Salvador","Equatorial Guinea","Eritrea","Estonia","Eswatini","Ethiopia","Europe and Central Asia (WB)","European Union (27)","Fiji","Finland","France","French Polynesia","Gabon","Gambia","Georgia","Germany","Ghana","Greece","Guam","Guatemala","Guinea","Guinea-Bissau","Guyana","Haiti","High-income countries","Honduras","Hong Kong","Hungary","Iceland","India","Indonesia","Iran","Iraq","Ireland","Israel","Italy","Jamaica","Japan","Jordan","Kazakhstan","Kenya","Kuwait","Kyrgyzstan","Laos","Latin America and Caribbean (WB)","Latvia","Lebanon","Lesotho","Liberia","Libya","Lithuania","Low-income countries","Lower-middle-income countries","Luxembourg","Macao","Madagascar","Malawi","Malaysia","Maldives","Mali","Malta","Mauritania","Mauritius","Mexico","Middle East and North Africa (WB)","Middle-income countries","Moldova","Mongolia","Montenegro","Morocco","Mozambique","Myanmar","Namibia","Nepal","Netherlands","New Caledonia","New Zealand","Nicaragua","Niger","Nigeria","North America (WB)","North Korea","North Macedonia","Norway","Oman","Pakistan","Palestine","Panama","Papua New Guinea","Paraguay","Peru","Philippines","Poland"]
+var countries2 = ["Afghanistan", "Albania", "Algeria", "Angola", "Argentina", "Armenia", "Australia", "Austria", "Azerbaijan", "Bahamas", "Bahrain", "Bangladesh", "Barbados", "Belarus", "Belgium", "Belize", "Benin", "Bhutan", "Bolivia", "Bosnia and Herzegovina", "Botswana", "Brazil", "Brunei", "Bulgaria", "Burkina Faso", "Burundi", "Cambodia", "Cameroon", "Canada", "Cape Verde", "Central African Republic", "Chad", "Chile", "China", "Colombia", "Comoros", "Congo", "Costa Rica", "Cote d'Ivoire", "Croatia", "Cuba", "Cyprus", "Czechia", "Democratic Republic of Congo", "Denmark", "Djibouti", "Dominican Republic", "East Timor", "Ecuador", "Egypt", "El Salvador", "Equatorial Guinea", "Eritrea", "Estonia", "Eswatini", "Ethiopia", "Fiji", "Finland", "France", "French Polynesia", "Gabon", "Gambia", "Georgia", "Germany", "Ghana", "Greece", "Guam", "Guatemala", "Guinea", "Guinea-Bissau", "Guyana", "Haiti", "Honduras", "Hong Kong", "Hungary", "Iceland", "India", "Indonesia", "Iran", "Iraq", "Ireland", "Israel", "Italy", "Jamaica", "Japan", "Jordan", "Kazakhstan", "Kenya", "Kuwait", "Kyrgyzstan", "Laos", "Latvia", "Lebanon", "Lesotho", "Liberia", "Libya", "Lithuania", "Luxembourg", "Macao", "Madagascar", "Malawi", "Malaysia", "Maldives", "Mali", "Malta", "Mauritania", "Mauritius", "Mexico", "Moldova", "Mongolia", "Montenegro", "Morocco", "Mozambique", "Myanmar", "Namibia", "Nepal", "Netherlands", "New Caledonia", "New Zealand", "Nicaragua", "Niger", "Nigeria", "North Korea", "North Macedonia", "Norway", "Oman", "Pakistan", "Palestine", "Panama", "Papua New Guinea", "Paraguay", "Peru", "Philippines", "Poland"];
 var map3Spec = {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "description": "Female labor force participation rate in Afghanistan over time.",
@@ -247,7 +247,7 @@ var map3Spec = {
           "bind": {
             "input": "select",
             "options": countries2,
-            "name": "Select Entity: "
+            "name": "Select Country: "
           }
         },
         {
@@ -256,7 +256,7 @@ var map3Spec = {
           "bind": {
             "input": "select",
             "options": countries2,
-            "name": "Select Entity: "
+            "name": "Select Country: "
           }
         },
         {
@@ -265,7 +265,7 @@ var map3Spec = {
           "bind": {
             "input": "select",
             "options": countries2,
-            "name": "Select Entity: "
+            "name": "Select Country: "
           }
         },
         {
@@ -274,7 +274,7 @@ var map3Spec = {
           "bind": {
             "input": "select",
             "options": countries2,
-            "name": "Select Entity: "
+            "name": "Select Country: "
           }
         },
         {
@@ -283,7 +283,7 @@ var map3Spec = {
           "bind": {
             "input": "select",
             "options": countries2,
-            "name": "Select Entity: "
+            "name": "Select Country: "
           }
         }
   ],
@@ -314,47 +314,7 @@ var map3Spec = {
 vegaEmbed('#map3', map3Spec).then(function(result) {
   console.log("Map 3 rendered successfully!");
 }).catch(console.error);
-var countries3 = ['Albania', 'Algeria', 'American Samoa', 'Angola', 'Anguilla',
-  'Antigua and Barbuda', 'Argentina', 'Armenia', 'Aruba',
-  'Australia', 'Austria', 'Azerbaijan', 'Bahamas', 'Bahrain',
-  'Bangladesh', 'Barbados', 'Belarus', 'Belgium', 'Belize', 'Benin',
-  'Bermuda', 'Bhutan', 'Bolivia', 'Bosnia and Herzegovina',
-  'Botswana', 'Brazil', 'Brunei', 'Bulgaria', 'Burkina Faso',
-  'Burundi', 'Cambodia', 'Cameroon', 'Canada', 'Cayman Islands',
-  'Chile', 'Colombia', 'Comoros', 'Congo', 'Cook Islands',
-  'Costa Rica', "Cote d'Ivoire", 'Croatia', 'Cuba', 'Cyprus',
-  'Czechia', 'Czechoslovakia', 'Denmark', 'Dominica',
-  'Dominican Republic', 'East Timor', 'Ecuador', 'Egypt',
-  'El Salvador', 'Equatorial Guinea', 'Estonia', 'Ethiopia',
-  'Falkland Islands', 'Faroe Islands', 'Fiji', 'Finland', 'France',
-  'French Polynesia', 'Gabon', 'Gambia', 'Georgia', 'Germany',
-  'Ghana', 'Greece', 'Greenland', 'Grenada', 'Guatemala', 'Guernsey',
-  'Guinea', 'Guyana', 'Haiti', 'Honduras', 'Hong Kong', 'Hungary',
-  'Iceland', 'India', 'Indonesia', 'Iran', 'Iraq', 'Ireland',
-  'Isle of Man', 'Israel', 'Italy', 'Jamaica', 'Japan', 'Jordan',
-  'Kazakhstan', 'Kenya', 'Kiribati', 'Kosovo', 'Kuwait',
-  'Kyrgyzstan', 'Laos', 'Latvia', 'Lesotho', 'Liberia',
-  'Liechtenstein', 'Lithuania', 'Luxembourg', 'Macau, China',
-  'Madagascar', 'Malaysia', 'Maldives', 'Mali', 'Malta',
-  'Marshall Islands', 'Martinique', 'Mauritius', 'Mexico', 'Moldova',
-  'Mongolia', 'Montenegro', 'Montserrat', 'Morocco', 'Mozambique',
-  'Myanmar', 'Namibia', 'Nepal', 'Netherlands',
-  'Netherlands Antilles', 'New Caledonia', 'New Zealand',
-  'Nicaragua', 'Niger', 'Nigeria', 'Niue', 'North Macedonia',
-  'Northern Mariana Islands', 'Norway', 'Oman', 'Pakistan', 'Palau',
-  'Palestine', 'Panama', 'Papua New Guinea', 'Paraguay', 'Peru',
-  'Philippines', 'Poland', 'Portugal', 'Puerto Rico', 'Qatar',
-  'Reunion', 'Romania', 'Russia', 'Rwanda', 'Saint Helena',
-  'Saint Kitts and Nevis', 'Saint Lucia',
-  'Saint Pierre and Miquelon', 'Samoa', 'San Marino',
-  'Sao Tome and Principe', 'Saudi Arabia', 'Senegal', 'Serbia',
-  'Seychelles', 'Sierra Leone', 'Singapore', 'Slovakia', 'Slovenia',
-  'South Africa', 'South Korea', 'Spain', 'Sri Lanka', 'Suriname',
-  'Sweden', 'Switzerland', 'Syria', 'Taiwan', 'Tajikistan',
-  'Tanzania', 'Thailand', 'Togo', 'Tonga', 'Trinidad and Tobago',
-  'Tunisia', 'Turkey', 'Uganda', 'Ukraine', 'United Arab Emirates',
-  'United Kingdom', 'United States', 'Uruguay', 'Uzbekistan',
-  'Vanuatu', 'Venezuela', 'Vietnam', 'Yemen', 'Zambia', 'Zimbabwe']
+var countries3 = ["Albania", "Algeria", "Angola", "Argentina", "Armenia", "Australia", "Austria", "Azerbaijan", "Bahamas", "Bahrain", "Bangladesh", "Barbados", "Belarus", "Belgium", "Belize", "Benin", "Bhutan", "Bolivia", "Bosnia and Herzegovina", "Botswana", "Brazil", "Brunei", "Bulgaria", "Burkina Faso", "Burundi", "Cambodia", "Cameroon", "Canada", "Chile", "Colombia", "Comoros", "Congo", "Costa Rica", "Cote d'Ivoire", "Croatia", "Cuba", "Cyprus", "Czechia", "Denmark", "Dominica", "Dominican Republic", "East Timor", "Ecuador", "Egypt", "El Salvador", "Equatorial Guinea", "Estonia", "Ethiopia", "Fiji", "Finland", "France", "Gabon", "Gambia", "Georgia", "Germany", "Ghana", "Greece", "Greenland", "Grenada", "Guatemala", "Guinea", "Guyana", "Haiti", "Honduras", "Hungary", "Iceland", "India", "Indonesia", "Iran", "Iraq", "Ireland", "Israel", "Italy", "Jamaica", "Japan", "Jordan", "Kazakhstan", "Kenya", "Kiribati", "Kosovo", "Kuwait", "Kyrgyzstan", "Laos", "Latvia", "Lesotho", "Liberia", "Liechtenstein", "Lithuania", "Luxembourg", "Madagascar", "Malaysia", "Maldives", "Mali", "Malta", "Marshall Islands", "Mauritius", "Mexico", "Moldova", "Mongolia", "Montenegro", "Morocco", "Mozambique", "Myanmar", "Namibia", "Nepal", "Netherlands", "New Zealand", "Nicaragua", "Niger", "Nigeria", "North Macedonia", "Norway", "Oman", "Pakistan", "Palau", "Palestine", "Panama", "Papua New Guinea", "Paraguay", "Peru", "Philippines", "Poland", "Portugal", "Qatar", "Romania", "Russia", "Rwanda", "Saint Kitts and Nevis", "Saint Lucia", "Samoa", "San Marino", "Sao Tome and Principe", "Saudi Arabia", "Senegal", "Serbia", "Seychelles", "Sierra Leone", "Singapore", "Slovakia", "Slovenia", "South Africa", "South Korea", "Spain", "Sri Lanka", "Suriname", "Sweden", "Switzerland", "Syria", "Taiwan", "Tajikistan", "Tanzania", "Thailand", "Togo", "Tonga", "Trinidad and Tobago", "Tunisia", "Turkey", "Uganda", "Ukraine", "United Arab Emirates", "United Kingdom", "United States", "Uruguay", "Uzbekistan", "Vanuatu", "Venezuela", "Vietnam", "Yemen", "Zambia", "Zimbabwe"];
 var map4Spec = {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "description": "Pie Chart with percentage_tooltip",
@@ -384,7 +344,7 @@ var map4Spec = {
       "bind": {
         "input": "select",
         "options": countries3,
-        "name": "Select Entity: "
+        "name": "Select Country: "
       }
     }
   ],
