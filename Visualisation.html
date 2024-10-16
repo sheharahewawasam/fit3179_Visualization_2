@@ -7,13 +7,22 @@
     <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
     <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
     <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sheharahewawasam/fit3179@refs/heads/Visualization_II/Visualization.css">
+    <link rel="stylesheet" href="https://raw.githubusercontent.com/sheharahewawasam/fit3179_Visualization_2/refs/heads/main/Visualization.css">
+
+    <div class="float-right">
+      <label for="year">Year:</label>
+      <input type="range" id="year" name="year"
+             min="1991" max="2024" value="1991" step="1">
+      <span id="YValue">1991</span>
+    </div>
     
 </head>
 <body>
+  <div class="container">
     <h1>Rise In Women Employees</h1>
     <div>
       <h2>Ratio of female to male labor force participation rate throughout the years </h2>
+      <p id = "yearlimit1" style="color: red;"></p>
       <!-- First Map -->
       <div id="map1"></div>
     </div>
@@ -26,8 +35,8 @@
       <div id="map2"></div>
     </div>
     <div id="map2_button">
-      <p>AGE GROPUP: <span id="valueDisplay"></span></p>
-      <button onclick="increaseValue()">Click to change age group</button>
+      <p style="width: 100;">AGE GROPUP: <span id="valueDisplay"></span></p>
+      <button id="button" >CLICK TO CHANGE AGE GROUP</button>
     </div>
     <div id="map2_desc">
       <p></p>
@@ -42,13 +51,15 @@
     </div>
     <div>
       <h2>Female share employment by sector</h2>
+      <p id = "yearlimit4" style="color: red;"></p>
       <!-- Fourth Map -->
       <div id="map4"></div>
     </div>
     <div id="map4_desc">
       <p></p>
     </div>
-    <script src="https://cdn.jsdelivr.net/gh/sheharahewawasam/fit3179@refs/heads/Visualization_II/Visualization.js"></script>
+  </div>
+  <script src="https://raw.githubusercontent.com/sheharahewawasam/fit3179_Visualization_2/refs/heads/main/Visualization.js"></script>
 
 </body>
 </html>
